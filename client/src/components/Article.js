@@ -18,13 +18,13 @@ export default class Article extends Component {
   render() {
     return (
       <ParallaxProvider>
-        <Parallax
-          data={{
-            "data-center-center": "opacity: 1;",
-            "data-bottom-top": "opacity: 0;"
-          }}
-        >
-          <Content />
+        <Parallax>
+          <div className="article-main-container">
+            <div className="article-text-container">
+              <h1>{this.props.title}</h1>
+              {this.props.content}
+            </div>
+          </div>
         </Parallax>
       </ParallaxProvider>
     );
