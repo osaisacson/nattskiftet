@@ -196,7 +196,7 @@ ul {
 }
 
 .article-main-container {
-  background-color: $background;
+  background-image: linear-gradient(30deg, $background, darken($background, 13%));
 }
 
 .article-text-container {
