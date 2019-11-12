@@ -46,7 +46,7 @@ function Home() {
         {/* neon logo sign */}
         <div class="logo">
           <b>
-            n<span>a</span>ttsk<span>i</span>f<span>t</span>tet
+            n<span>a</span>ttsk<span>i</span>ftet
           </b>
         </div>
       </div>
