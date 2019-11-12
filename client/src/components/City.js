@@ -1,33 +1,32 @@
-import React, { Component } from 'react';
-import Postcode from './Postcode';
+import React, { Component } from "react";
+import { ParallaxProvider, Parallax } from "react-skrollr"; //https://github.com/Prinzhorn/skrollr/tree/master/examples
 
-export default class City extends Component {
-  constructor(props) {
-    super(props);
+const Content = () => {
+  return (
+    <Parallax
+      data={{
+        "data-center-center": "opacity: 1;",
+        "data-bottom-top": "opacity: 0;"
+      }}
+    >
+      Some content
+    </Parallax>
+  );
+};
 
-    this.state = {};
-  }
-
+export default class Article extends Component {
   render() {
-    let cityBackgroundImage =
-      'https://images.unsplash.com/photo-1529655683826-aba9b3e77383?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9';
-    // Placeholder image for now. Add a function here that connects to unsplash API and pulls in an img url that matches this.props.city.
-
     return (
-      <>
-        <div class="flex-center-column">
-          <input
-            className="text-center"
-            type="text"
-            value=""
-            placeholder="City"
-          ></input>
-          <h1>Great, you're in {this.props.city}</h1>
-          <img alt="city" className="city" src={cityBackgroundImage} />
-          <h1>Now what's your postcode</h1>
-          <Postcode postcode={null} />
-        </div>
-      </>
+      <ParallaxProvider>
+        <Parallax
+          data={{
+            "data-center-center": "opacity: 1;",
+            "data-bottom-top": "opacity: 0;"
+          }}
+        >
+          <Content />
+        </Parallax>
+      </ParallaxProvider>
     );
   }
 }
