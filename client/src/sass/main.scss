@@ -1,0 +1,150 @@
+@import url(https://fonts.googleapis.com/css?family=Libre+Franklin:100,400,600,900&display=swap);
+
+//Colors
+$primary-color: #000;
+$secondary-color: rgb(56, 56, 56);
+
+
+//Main
+body {
+  height: calc(100vh);
+  background-color: transparent;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.city { 
+  width: 200px;
+}
+
+//Text
+h1,
+h2,
+h3 {
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+h1,
+h2 {
+  font-weight: 800;
+}
+
+ul {
+  padding-inline-start: 0;
+}
+
+
+//Helpers
+.hide {
+  display: none;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.fit-content {
+  width: fit-content;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.flex-center-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-spread {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-spread-end {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.flex-spread-start {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.flex-left {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-column-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.border-left {
+  border-left: .5px solid grey;
+  margin-left: 10px;
+}
+
+.margin-bottom-10px {
+  margin-bottom: 10px;
+}
+
+// Helper css components
+.separator {
+  width: 100%;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+  padding-top: 5px;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+}
+
+// Sections
+.rep {
+  @extend .avatar;
+}
+
+.voting {
+  @extend .flex-spread;
+  width: 300px;
+  padding: 5px; 
+
+  div + div {
+   text-align: right;
+
+
+   p {
+    text-align: center;
+    color: white;
+    background-color: red;
+    padding-right: 8px;
+    padding-left: 8px;
+
+     &.agree {
+       background-color: green;
+     }
+   }
+  }
+}
