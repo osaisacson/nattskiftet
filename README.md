@@ -1,4 +1,4 @@
-# Boilerplate - React/Node/Sass/Heroku
+# Nattskiftet
 
 Uses react/node/sass and deploys with heroku.
 Client/server setup based on this example: https://www.youtube.com/watch?v=eHWK4Pu6dmE
@@ -37,7 +37,7 @@ brew install node
 
 ### Original setup
 
-1. Go to https://github.com/osaisacson/boilerplate-react-node-sass.git
+1. Go to https://github.com/osaisacson/nattskiftet.git
 
 2. Click on 'Use this template' and follow the steps to set up a new repository based on this code.
 
