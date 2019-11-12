@@ -1,8 +1,6 @@
 import React from "react";
 import "./sass/main.scss";
 
-import City from "./components/City";
-
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -12,7 +10,12 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <City city="London" />;
+        <div class="moon"></div>
+        <div class="logo">
+          <b>
+            n<span>a</span>ttsk<span>i</span>f<span>t</span>tet
+          </b>
+        </div>
       </>
     );
   }
